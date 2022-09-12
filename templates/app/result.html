@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="{% static 'CSS/style.css'%}">
+</head>
+<body>
+    <img src="{%static 'Images/demo.jpg'%}" alt="">
+    <h1>English Dictionary</h1>
+    <h2>You searched for <span> {{key1}} </span> </h2>
+    <a href="http://127.0.0.1:8000/"><img id="a" src="{%static 'Images/back.jpg'%}" alt=""></a>
+    <div class="big_container">
+        <div class="formdiv1">
+           <h3>Meaning</h3>   
+            <p>{{key2}}</p>
+        </div>
+        <div class="formdiv1">
+            <h3>Antonyms</h3>
+            <p>{{key3}}</p>
+        </div>
+        <div class="formdiv1">
+            <h3>Synonyms</h3>
+            <p>{{key4}}</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
